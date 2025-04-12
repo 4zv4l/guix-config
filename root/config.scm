@@ -19,6 +19,10 @@
                   (supplementary-groups '("wheel" "netdev" "audio" "video")))
          %base-user-accounts))
 
+  (skeletons
+    `(("config.scm" ,(local-file "guix-home-config.scm"))
+      ,default-skeletons))
+
   ;; global packages
   (packages
     (cons* (specification->package "neovim")
