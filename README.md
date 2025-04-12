@@ -3,7 +3,7 @@
 - `image.scm` is used to create a bootable image
 
 ```bash
-$ guix system image -t iso9660 image.scm
+$ guix system image -t iso9660 --save-provenance image.scm
 ```
 
 - `root/config.scm` is the global OS config
